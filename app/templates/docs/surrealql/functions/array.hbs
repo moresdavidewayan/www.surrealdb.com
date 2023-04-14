@@ -631,7 +631,7 @@
         <p>If either of the two arguments do not evaluate to an array, then an <Link @link="docs.surrealql.datamodel.simple"><code>EMPTY</code></Link> value will be returned:</p>
         <codes vertical>
 			<Code @name="docs-surrealql-functions-array-intersect-error-input.surql">
-				SELECT * FROM array::difference(3, true);
+				SELECT * FROM array::intersect(3, true);
 			</Code>
 			<Code @name="docs-surrealql-functions-array-intersect-error-result.txt">
 				null
@@ -727,7 +727,7 @@
 		<p>If either of the two arguments do not evaluate to an array, then an <Link @link="docs.surrealql.datamodel.simple"><code>EMPTY</code></Link> value will be returned:</p>
         <codes vertical>
 			<Code @name="docs-surrealql-functions-array-prepend-error-input.surql">
-				SELECT * FROM array::combine(3, true);
+				SELECT * FROM array::prepend(3, true);
 			</Code>
 			<Code @name="docs-surrealql-functions-array-prepend-error-result.txt">
 				null
@@ -845,11 +845,11 @@
 		</Code>
 		<p>The function also accepts a second <Link @link="docs.surrealql.datamodel.simple">boolean</Link> parameter which determines the sorting direction. The second parameter can be <Ascua::Prism::Inline @language="surql" @code="true" /> for ascending order, or <Ascua::Prism::Inline @language="surql" @code="false" /> for descending order.</p>
 		<Code @name="docs-surrealql-functions-array-sort-2.surql" text="API Definition">
-			count(array, bool) -> array
+			array::sort(array, bool) -> array
 		</Code>
 		<p>The function also accepts a second <Link @link="docs.surrealql.datamodel.simple">string</Link> parameter which determines the sorting direction. The second parameter can be <Ascua::Prism::Inline @language="surql" @code="'asc'" /> for ascending order, or <Ascua::Prism::Inline @language="surql" @code="'desc'" /> for descending order.</p>
 		<Code @name="docs-surrealql-functions-array-sort-3.surql" text="API Definition">
-			count(array, string) -> array
+			array::sort(array, string) -> array
 		</Code>
 		<p>The following examples show this function, and its output, when used in a select statement:</p>
 		<codes vertical>
