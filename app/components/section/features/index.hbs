@@ -71,7 +71,7 @@
 					</h4>
 					<p>
 						For highly-available and highly-scalable setups, SurrealDB can be run on top of a
-						<Link @link="https://surrealkv.org">SurrealKV</Link> cluster, with the
+						SurrealKV cluster, with the
 						ability to horizontally scale to <code>100+</code> terabytes of data.
 					</p>
 				</block>
@@ -1089,7 +1089,7 @@
 
 			<Layout::Line />
 
-			<Layout::Blocks cols-2-to-1 as |block|>
+			<Layout::Blocks cols-1 as |block|>
 				<block>
 					<h4 flex row middle>
 						Docker container
@@ -1102,7 +1102,7 @@
 					</p>
 				</block>
 				<block>
-					<Code min-h-100 @name="features/tooling/docker.shell" />
+					<Code @name="features/tooling/docker.shell" />
 				</block>
 			</Layout::Blocks>
 
